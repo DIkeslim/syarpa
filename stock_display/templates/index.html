@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Stock Analysis Dashboard</h1>
+        <p class="lead">Stocks with Market Cap Over $20B and Golden/Death Crossovers</p>
+
+        <!-- Table for displaying stock data -->
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Stock Ticker</th>
+                    <th>Signal Type</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                    <tr>
+                        <td>{{ result.stock }}</td>
+                        <td>{{ result.type }}</td>
+                        <td>{{ result.date.strftime('%Y-%m-%d') }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
