@@ -21,6 +21,7 @@ google-auth==2.32.0
 google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.1
 googleapis-common-protos==1.63.2
+gunicorn==22.0.0
 html5lib==1.1
 httplib2==0.22.0
 idna==3.7
@@ -34,6 +35,7 @@ multitasking==0.0.11
 ndg-httpsclient==0.5.1
 numpy==1.24.4
 oauthlib==3.2.2
+packaging==24.1
 pandas==2.0.3
 peewee==3.17.6
 platformdirs==4.2.2
