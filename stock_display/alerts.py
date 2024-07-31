@@ -3,11 +3,7 @@ import json
 
 # Initialize Pusher
 pusher_client = pusher.Pusher(
-    app_id='1842229',
-    key='6b6d47b4380aea6e6cb1',
-    secret='c1ab10572596bd24d516',
-    cluster='mt1',
-    ssl=True
+    
 )
 
 
