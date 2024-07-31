@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Fetch and process stock data
-    stocks = ['AAPL', 'MSFT', 'GOOGL']  # Add more stocks as needed
+    stocks = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'FB', 'NVDA', 'BRK-B', 'V', 'JPM']
     results = []
 
     for stock in stocks:
